@@ -10,3 +10,4 @@ func _on_SceneChangeButton_button_up():
 		PlayerVariables.music.play()
 		PlayerVariables.first_run = false
 	PlayerVariables.start_time = OS.get_ticks_msec()
+	PlayerVariables.splits = []

@@ -20,4 +20,6 @@ func _physics_process(delta):
 
 
 func teleport() -> void:
+	var time_now = OS.get_ticks_msec()
+	PlayerVariables.splits.append(time_now)
 	get_tree().change_scene_to(next_scene)

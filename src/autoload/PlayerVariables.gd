@@ -9,6 +9,7 @@ var poison_resistant: bool = false
 var left_creature: bool = false
 var start_time
 var first_run = true
+var splits = []
 
 
 func _ready():
