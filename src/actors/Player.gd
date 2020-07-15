@@ -25,13 +25,12 @@ func _ready():
 	$DeathSound.play()
 
 
-
 func _input(event):
 	if event is InputEventMouseMotion:
 		$Gun.look_at(get_global_mouse_position())
 
 	if event is InputEventKey and (event as InputEventKey).scancode == KEY_ESCAPE:
-		get_tree().quit()
+		get_tree().change_scene("res://src/screens/MainScreen.tscn")
 
 
 func _physics_process(delta):

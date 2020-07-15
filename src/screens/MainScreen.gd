@@ -6,5 +6,7 @@ func _ready():
 
 
 func _on_SceneChangeButton_button_up():
-	PlayerVariables.music.play()
+	if PlayerVariables.first_run:
+		PlayerVariables.music.play()
+		PlayerVariables.first_run = false
 	PlayerVariables.start_time = OS.get_unix_time()
