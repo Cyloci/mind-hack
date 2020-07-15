@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://src/objects/Bullet.gd" type="Script" id=2]
-
-[node name="Line2D" type="Line2D"]
-width = 3.0
-default_color = Color( 0.537255, 0.901961, 1, 1 )
-script = ExtResource( 2 )
