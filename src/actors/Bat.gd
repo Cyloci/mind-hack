@@ -43,10 +43,10 @@ func _on_Player_shoot(object, _start, _end):
 	if object != self:
 		return
 	$CaptureCooldown.start()
+	$Camera2D.current = true
+	PlayerVariables.player.visible = false
 
 
 func _on_CaptureCooldown_timeout():
 	cooled_down = true
 	possessed = true
-	$Camera2D.current = true
-	PlayerVariables.player.visible = false

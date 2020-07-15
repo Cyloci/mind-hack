@@ -147,7 +147,7 @@ __meta__ = {
 
 [node name="Portal" parent="." instance=ExtResource( 3 )]
 position = Vector2( 448.894, -29.7298 )
-rotation = -17189.2
+rotation = -17204.3
 next_scene = ExtResource( 4 )
 
 [node name="Bunny" parent="." instance=ExtResource( 6 )]
@@ -159,7 +159,7 @@ position = Vector2( 834.554, 549.22 )
 [node name="DeathZone" parent="." instance=ExtResource( 5 )]
 position = Vector2( 497.357, 1011.38 )
 scale = Vector2( 11, 3 )
-[connection signal="shoot" from="Player" to="Bunny2" method="_on_Player_shoot"]
 [connection signal="shoot" from="Player" to="." method="_on_Player_shoot"]
+[connection signal="shoot" from="Player" to="Bunny2" method="_on_Player_shoot"]
 [connection signal="shoot" from="Player" to="Bunny" method="_on_Player_shoot"]
 [connection signal="body_entered" from="DeathZone" to="Player" method="_on_DeathZone_body_entered"]

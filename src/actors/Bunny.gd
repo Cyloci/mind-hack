@@ -47,7 +47,7 @@ func _physics_process(delta: float) -> void:
 		_velocity.y += GRAVITY
 		if grounded:
 			_velocity.y = -500
-	
+
 		_velocity.y = move_and_slide(_velocity, Vector2.UP).y
 
 
@@ -55,10 +55,10 @@ func _on_Player_shoot(object, _start, _end):
 	if object != self:
 		return
 	$CaptureCooldown.start()
+	$Camera2D.current = true
+	PlayerVariables.player.visible = false
 
 
 func _on_CaptureCooldown_timeout():
 	cooled_down = true
 	possessed = true
-	$Camera2D.current = true
-	PlayerVariables.player.visible = false
