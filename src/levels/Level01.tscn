@@ -131,6 +131,6 @@ __meta__ = {
 
 [node name="Portal" parent="." instance=ExtResource( 3 )]
 position = Vector2( 958.501, 63.4459 )
-rotation = -1595.36
+rotation = -3786.91
 next_scene = ExtResource( 4 )
 [connection signal="shoot" from="Player" to="." method="_on_Player_shoot"]
