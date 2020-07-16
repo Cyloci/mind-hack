@@ -37,4 +37,4 @@ func _ready():
 
 
 func _on_SceneChangeButton_button_up():
-	PlayerVariables.start_time = OS.get_ticks_msec()
+	PlayerVariables.reset()
